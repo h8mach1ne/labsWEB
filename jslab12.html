@@ -1,0 +1,48 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script>
+        function validate(obj){
+            var regName = /^[A-z]+ [A-z]+$/;
+            var name = obj.text1.value;
+            if(!regName.test(name)){
+                alert('Введите имя и фамилию правильно пожалуйста');
+                obj.text1.focus();
+                return false;
+            }else{
+                alert('Имя и фамилия введены правильно');
+                return true;
+            }
+        }
+        function ValidMail(obj) {
+    var re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
+    var myMail = obj.email.value;
+    var valid = re.test(myMail);
+    if (valid) alert('Адрес эл. почты введен правильно!');
+    else alert('Адрес электронной почты введен неправильно!'); obj.email.focus();
+}
+    function ValidPhone(obj) {
+    var re = /^\d[\d\(\)\ -]{4,14}\d$/;
+    var myPhone = obj.phone.value;
+    var valid = re.test(myPhone);
+    if (valid) alert('Номер телефона введен правильно!');
+    else output = alert('Номер телефона введен неправильно!');obj.phone.focus();
+}
+        </script>
+</head>
+<body>
+<form name="first">
+Вкажіть ваше ім’я:<br>
+<input type="text" name="text1">
+<input type="button" name="button1" value="Перевірка" onClick="validate(first)"><br>
+<p name="answ1"></p>
+Вкажіть вашу адресу e-mail:<br>
+<input type="text" name="email">
+<input type="button" name="button2" value="Перевірка" onClick="ValidMail(first)">
+<p name="answ2"></p>
+Вкажіть вашу номер телефона:<br>
+<input type="text" name="phone">
+<input type="button" name="button3" value="Перевірка" onClick="ValidPhone(first)">
+<p name="answ3"></p>
+</body>
+</html>
