@@ -20,5 +20,10 @@
     "url": "https://github.com/h8mach1ne/labsWEB/issues"
   },
   "homepage": "https://github.com/h8mach1ne/labsWEB#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint -- --fix && npx prettier script.js --write"
+    }
+  },
   "description": ""
 }
