@@ -1,0 +1,24 @@
+{
+  "name": "lab5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^6.7.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h8mach1ne/labsWEB.git"
+  },
+  "bugs": {
+    "url": "https://github.com/h8mach1ne/labsWEB/issues"
+  },
+  "homepage": "https://github.com/h8mach1ne/labsWEB#readme",
+  "description": ""
+}
